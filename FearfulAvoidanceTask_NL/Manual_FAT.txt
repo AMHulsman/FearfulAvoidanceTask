@@ -1,0 +1,97 @@
+Cite the Fearful Avoidance Task as:
+Hulsman, A. M., Kaldewaij, R., Hashemi, M. M., Zhang, W., Koch, S. B. J., Figner, B., Roelofs, K., & Klumpers, F. (2021). Individual differences in costly fearful avoidance and the relation to psychophysiology. Behaviour research and therapy, 137, 103788. https://doi.org/10.1016/j.brat.2020.103788
+
+Contact:
+Anneloes Hulsman (anneloes_hulsman@hotmail.com) / Floris Klumpers (floris.klumpers@ru.nl)
+
+
+*** Install the Fearful Avoidance Task ***
+1. Download and install Python (version 3.7 or higher; https://www.python.org/downloads/)
+2. Install Expyriment (https://docs.expyriment.org/GettingStarted.html)
+To install Expyriment, please follow the instructions provided in the Expyriment Getting Started Guide. This guide will help you with the installation steps tailored to your specific device.
+
+For Windows users:
+You can install Expyriment using the 'Command Prompt' with the following commands:
+
+setx path "%path%;C:\Program Files\Python38;" 
+py -3 -m pip install -U expyriment[all]
+py -3 -m pip install -U expyriment[video]
+
+3. Download and unzip the experiment files to a location of your choice
+
+
+*** Description of files ***
+FearfulAvoidancePractice.py: This script includes the instructional video and several practice trials
+FearfulAvoidanceTask.py: This script contains the main test, followed by a set of subjective questions about the task.
+
+
+*** Folder structure explanation ***
+FearfulAvoidanceTask
+	FearfulAvoidanceTask/Stimuli – contains all stimuli used in the task
+	FearfulAvoidanceTask/Task
+		FearfulAvoidancePractice.py – script for instructions and practice trials
+		FearfulAvoidanceTask.py – script for the Fearful Avoidance Task
+		FearfulAvoidanceExtraPractice.py – script for additional practice trials
+		FearfulAvoidanceTask/Task/Data – contains all data
+		FearfulAvoidanceTask/Task/events – contains all events
+
+
+*** Test procedure ***
+1. Connect the headphones and check the volume
+
+2. Open the script FearfulAvoidancePractice.py located at ../FearfulAvoidanceTask/Task
+
+3. Enter the participant number. Only enter a number - no letters or symbols
+Depending on the participant number, they will receive task version A or B. The link between the avatars and threat levels differs between versions.
+- Even number = Task Version A
+- Odd number = Task Version B
+
+4. Start the script
+When the script starts, the instructional video will play. The participant can proceed to the practice rounds by pressing the arrow keys on the keyboard.
+
+5. Adjust the volume for the measurement session:
+- If a sound meter is available: Measure the volume of the loud sound (should not exceed 106 dB).
+- Otherwise: Open the file soft_noise.wav located at ../FearfulAvoidanceTask using Windows Media Player. Ensure Windows Media Player is set to maximum volume. Ask the participant to wear the headphones. Play the sound several times, adjusting the computer's volume (from very soft to slightly louder). Ask the participant to indicate when they can hear the sound. The sound resembles a soft puff. The goal is to set the test computer's volume to a level where the soft sound is just audible.
+
+6. Open the script FearfulAvoidanceTask.py located at ../FearfulAvoidanceTask/Task.
+
+7. Enter the participant number. Only enter a number — no letters or symbols. Use the same number as in the practice rounds.
+
+8. Start the script. Once the script starts, the participant can begin the task by pressing the arrow keys on the keyboard.
+
+
+*** Additional remarks ***
+In case…
+- The participant did not understand the instructions:
+	The instructional video can be replayed (either in full or in sections). The instructional videos are located in the folder .../FearfulAvoidanceTask/Stimuli. Ensure you play the correct video:
+	InstructionVideo_vA.mp4 is for participants with an even participant number
+	InstructionVideo_vB.mp4 is for participants with an odd participant number
+- Additional verbal instructions are allowed.
+- The participant wants extra practice trials:
+	You can open the script FearfulAvoidanceExtraPractice.py. This script is located in the folder ../FearfulAvoidanceTask/Task
+
+
+*** Additional information ***
+- You can adapt the number of trials according to your needs by opening the scripts and change the following command:
+block.add_trial(trial, copies=10) # add trial to block (5 per trial type = 5 min task, 10 per trial type = 8 min task)
+- There are four trial types: low reward/low threat, low reward/high threat, high reward/low threat, high reward/high threat
+- Trials are in a semi-random order: the same trial type will not be presented more than 3 times in a row
+
+
+*** Overview of the questions at the end of the task ***
+Dutch version:
+1. Hoe vervelend vond u het zachte geluid?
+2. Hoe vervelend vond u het harde geluid?
+3. Hoe plezierig vond u de beloning van €0.10?
+4. Hoe plezierig vond u de beloning van €0.50?
+5. In hoeverre verwachtte u een NEGATIEVE uitkomst wanneer u bij het onderstaande poppetje ervoor koos om te benaderen? 
+6. In hoeverre verwachtte u een NEGATIEVE uitkomst wanneer u bij het onderstaande poppetje ervoor koos om te benaderen? 
+7. In hoeverre verwachtte u een POSITIEVE uitkomst wanneer u bij het onderstaande poppetje ervoor koos om te benaderen? 
+8. In hoeverre verwachtte u een POSITIEVE uitkomst wanneer u bij het onderstaande poppetje ervoor koos om te benaderen? 
+
+Question 5 and 7 are about outcome expectations (negative/positive) in low threat conditions
+Question 6 and 8 are about outcome expectations (negative/positive) in high threat conditions
+
+
+*** Analysis scripts ***
+Analysis scripts will be uploaded at https://github.com/AMHulsman soon!

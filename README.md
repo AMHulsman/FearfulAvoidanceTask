@@ -1,6 +1,7 @@
 # Fearful Avoidance Task (FAT)
 The **Fearful Avoidance Task (FAT)** is an experimental paradigm that assesses approach-avoidance decisions under competing reward and threat prospects. 
 
+This repository contains a Python version of the Fearful Avoidance Task, allowing you to use it for your own experiments. For installation instructions, please refer to the manual in the project folder.
 
 *References*
 

@@ -9,5 +9,4 @@ Hulsman, A. M., Kaldewaij, R., Hashemi, M. M., Zhang, W., Koch, S. B., Figner, B
 
 Hulsman, A. M., van de Pavert, I., Roelofs, K., & Klumpers, F. (2024). Tackling costly fearful avoidance using Pavlovian counterconditioning. Behavior Therapy, 55(2), 361-375. doi: https://doi.org/10.1016/j.beth.2023.07.013
 
-Hulsman, A. M., Klaassen, F. H., De Voogd, L. D., Roelofs, K., & Klumpers, F. (2024). How distributed subcortical integration of reward and threat may inform approach-avoidance decisions. bioRxiv, 2024-04. doi: https://doi.org/10.1101/2024.04.22.590530
-
+Hulsman, A. M., Klaassen, F. H., De Voogd, L. D., Roelofs, K., & Klumpers, F. (2024). How distributed subcortical integration of reward and threat may inform approach-avoidance decisions. Journal of Neuroscience, e0794242024. doi: https://doi.org/10.1523/JNEUROSCI.0794-24.2024
